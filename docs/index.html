@@ -1,0 +1,88 @@
+<html>
+
+<head>
+  <title>KeepTube</title>
+  <script src="./bundle.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <h1 class="header" id="header">Keep<span class="tube">Tube</span></h1>
+  <div id="main">
+    <div id="mainContent"></div>
+  </div>
+
+  <div id="listaView" style="display: none">
+    <i id="help" class="fa fa-question-circle fa-2x" aria-hidden="true"></i>
+    <h2 class="header2 textOpacity">
+      <i class="fa fa-archive" aria-hidden="true"></i>
+      Total de grupos creados
+      <span id="gruposCreados" class="title"></span>
+    </h2>
+    <h2 class="header2 textOpacity">
+      <i class="fa fa-youtube-play" aria-hidden="true"></i>
+      Total de videos adjuntados
+      <span id="videosAdjuntados" class="title"></span>
+    </h2>
+    <div class="content">
+      <input id="search" name="a" type="search" autocomplete="false" placeholder="Buscar nombre de grupo" />
+      <br><br>
+      <div id="grupos"></div>
+
+      <i id="goToCreateGroup" class="fa fa-plus-circle fa-4x" aria-hidden="true"></i>
+    </div>
+  </div>
+
+  <div id="createGroupView" style="display: none">
+    <div class="header2 textOpacity" id="titulo">
+      <span id="volver">&lt;</span>
+      <h2>Crear un grupo</h2>
+    </div>
+
+    <div class="content">
+      <input id="name" placeholder="Nombre" required />
+      <p class="textOpacity">Nombre del grupo (Sin espacios)</p>
+
+      <br>
+      <input id="pass" type="password" placeholder="Contraseña" autocomplete="new-password" />
+      <p class="textOpacity">Contraseña en caso de que se quiera borrar videos o eliminar el grupo</p>
+
+      <br>
+      Privado:<input id="privado" type="checkbox" />
+      <p class="textOpacity">Si se marca como privado, no aparecerá en la lista</p>
+
+      <br>
+      <button id="createGroup">Crear Grupo</button>
+      <br>
+    </div>
+  </div>
+
+  <div id="groupView" style="display: none">
+    <div class="header2 textOpacity" id="titulo">
+      <span id="volver">&lt;</span>
+      <h2 id="grupoNombre" class="nodeText nodeTextGroup">Ningún grupo seleccionado</h2>
+      <i id="share" class="fa fa-share-alt share" style="font-size:24px"></i>
+    </div>
+    <div class="content">
+      <input id="urlVideo" placeholder="Url del video" />
+      <button id="anadirVideo">Añadir</button>
+      <div id="videoList"></div>
+    </div>
+  </div>
+
+  <div id="popUp" class="popUp">
+    <input id="input" placeholder="Escribe la contraseña" />
+    <br><br>
+    <p id="error"></p>
+    <button id="aceptar">Aceptar</button>
+    <button id="cancelar">Cancelar</button>
+  </div>
+
+  <div id="guardando" class="info">Guardando...</div>
+  <div id="copiado" class="info">Copiado en el portapapeles</div>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <title>KeepTube</title>
+    <script src="./bundle.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        Keep<span class="tube">Tube</span>
+    </div>
+    <br>
+    <div class="content">
+        <h3>¿Qué es KeepTube?</h3>
+        <div>KeepTube es una web app que permite crear listas de videos de youtube de forma colaborativa y ordenada
+            para compartir con tus amigos. No hay procesos de registro ni de login. También se puede descargar la
+            app para android.</div>
+        <br>
+
+        <h3>¿Cómo funcion?</h3>
+        <ol>
+            <li>Creas un grupo y le pones el nombre que quieras. Por ejemplo: "Música Running".</li>
+            <li>Pegas la url del video de youtube que quieras y pulsas el botón "Añadir".</li>
+            <li>Ya has creado un grupo para tus videos. Ahora puedes compartirlo con quien quieras pulsando el botón
+                de share!</li>
+        </ol>
+        <br>
+
+        <h3>Accesos</h3>
+        Accede ahora via web <a href="https://keeptube.github.io/keeptube">aquí</a>
+        <br>
+        Descarga el instalador para android <a href="https://keeptube.github.io/keeptube/keepTube.apk">aquí</a>
+        <br>
+        <br>
+
+        <h3>Contraseñas</h3>
+        <div style="margin-bottom: 10vh">Cuando creas un grupo, puedes introducir una contraseña o ponerlo en modo
+            privado.
+            <br>
+            Si le pones una contraseña, sólo la gente que sepa esa contraseña podrá añadir y borrar videos.<br>
+            Si le pones modo privado, sólo la gente que sepa la contraseña podrá entrar dentro del grupo.
+        </div>
+    </div>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            font-family: 'H', 'Trebuchet MS', Helvetica;
+            line-height: 2rem;
+            font-weight: normal;
+            margin: 0;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        .header {
+            padding-top: 4vh;
+            padding-bottom: 4vh;
+            margin: auto;
+            background: #66b032;
+            font-size: 30px;
+            text-align: center;
+            color: white;
+
+            font-family: Trattatello, fantasy;
+        }
+
+        .tube {
+            color: #66b032;
+            background: white;
+            border-radius: 10px;
+            margin-left: 5px;
+            padding: 2px;
+        }
+
+        .content {
+            width: 80%;
+            margin: auto;
+        }
+
+        @media only screen and (min-width: 600px) {
+            .content {
+                width: 40%;
+            }
+        }
+    </style>
+</body>
+
+</html>
